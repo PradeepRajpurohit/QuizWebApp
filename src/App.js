@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import Home from './componenets/Home'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
+import Quiz from './componenets/Quiz';
+import Result from './componenets/Result';
+import { Provider} from 'react-redux';
+import store from './store/store';
+// import { useState } from 'react';
 
-function App() {
+const App = () => {
+
+  // const topic = 'java';
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<Home />}></Route>
+          <Route exact path='/quiz/:topic' element={<Quiz />}></Route>
+          <Route exact path='/result' element={<Result/>}></Route>
+        </Routes>
+      </Router>
+    </Provider>
   );
 }
 

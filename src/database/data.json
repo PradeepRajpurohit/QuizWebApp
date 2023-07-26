@@ -1,0 +1,451 @@
+{
+  "java": [
+    {
+      "id": 0,
+      "question": "Which keyword is used to define a class in Java?",
+      "options": [
+        "class",
+        "void",
+        "new",
+        "public"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 1,
+      "question": "What is the default value of an integer variable in Java?",
+      "options": [
+        "0",
+        "1",
+        "null",
+        "NaN"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 2,
+      "question": "Which data type is used to store a single character in Java?",
+      "options": [
+        "char",
+        "String",
+        "int",
+        "boolean"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 3,
+      "question": "Which operator is used to concatenate two strings in Java?",
+      "options": [
+        "+",
+        "-",
+        "*",
+        "/"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 4,
+      "question": "What is the output of the following code?\nint x = 5;\nSystem.out.println(++x);",
+      "options": [
+        "5",
+        "6",
+        "0",
+        "Compilation error"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 5,
+      "question": "Which keyword is used to explicitly throw an exception in Java?",
+      "options": [
+        "throw",
+        "catch",
+        "finally",
+        "try"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 6,
+      "question": "Which loop is guaranteed to execute at least once in Java?",
+      "options": [
+        "for",
+        "while",
+        "do-while",
+        "if"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 7,
+      "question": "What is the purpose of the 'static' keyword in Java?",
+      "options": [
+        "To create an object of a class",
+        "To access non-static members",
+        "To declare constants",
+        "To implement inheritance"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 8,
+      "question": "Which method is called automatically when an object is created?",
+      "options": [
+        "start()",
+        "run()",
+        "init()",
+        "constructor()"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 9,
+      "question": "Which access modifier provides the highest level of encapsulation in Java?",
+      "options": [
+        "private",
+        "protected",
+        "public",
+        "default"
+      ],
+      "answer": 0
+    }
+  ],
+  "javascript": [
+    {
+      "id": 1,
+      "question": "What is the correct way to declare a JavaScript variable?",
+      "options": [
+        "var = myVar;",
+        "variable myVar;",
+        "var myVar;",
+        "myVar = variable;"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is NOT a JavaScript data type?",
+      "options": [
+        "string",
+        "boolean",
+        "number",
+        "float"
+      ],
+      "answer": 4
+    },
+    {
+      "id": 3,
+      "question": "How do you write a single-line comment in JavaScript?",
+      "options": [
+        "// This is a comment",
+        "/* This is a comment */",
+        "' This is a comment",
+        "# This is a comment"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 4,
+      "question": "What is the output of the following code?\n\n```js\nvar x = 5;\nvar y = 10;\nconsole.log(x + y + '5');\n```",
+      "options": [
+        "25",
+        "510",
+        "15",
+        "105"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 5,
+      "question": "What does the `typeof` operator return for the `null` value?",
+      "options": [
+        "'null'",
+        "'undefined'",
+        "'object'",
+        "'string'"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 6,
+      "question": "Which built-in function can be used to convert a string to an integer in JavaScript?",
+      "options": [
+        "convertToInt()",
+        "parseInt()",
+        "stringToInt()",
+        "toInteger()"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 7,
+      "question": "What does the `Array.prototype.push()` method do?",
+      "options": [
+        "Removes the last element from an array",
+        "Adds one or more elements to the end of an array",
+        "Returns the first element of an array",
+        "Reverses the order of the elements in an array"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 8,
+      "question": "Which keyword is used to declare a function in JavaScript?",
+      "options": [
+        "function",
+        "def",
+        "func",
+        "method"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 9,
+      "question": "What is the result of the expression `3 + '3'` in JavaScript?",
+      "options": [
+        "6",
+        "33",
+        "9",
+        "Error"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 10,
+      "question": "Which statement is used to exit or terminate a loop in JavaScript?",
+      "options": [
+        "break",
+        "continue",
+        "exit",
+        "return"
+      ],
+      "answer": 1
+    }
+  ],
+  "python": [
+    {
+      "id": 1,
+      "question": "What is the output of the following code snippet?\n\nnumbers = [1, 2, 3, 4, 5]\nsquared_numbers = [num * num for num in numbers]\nprint(squared_numbers)",
+      "options": [
+        "[1, 4, 9, 16, 25]",
+        "[1, 2, 3, 4, 5]",
+        "[1, 4, 9, 16]",
+        "[2, 4, 6, 8, 10]"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 2,
+      "question": "In Python, which of the following is used to create a function?",
+      "options": [
+        "def",
+        "function",
+        "create",
+        "define"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 3,
+      "question": "What will the following code snippet print?\n\nprint('Hello' + 3)",
+      "options": [
+        "Hello3",
+        "3Hello",
+        "Error: cannot concatenate 'str' and 'int' objects",
+        "Error: invalid syntax"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 4,
+      "question": "How do you check the number of elements in a list named 'my_list' in Python?",
+      "options": [
+        "my_list.count()",
+        "len(my_list)",
+        "count(my_list)",
+        "my_list.length()"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 5,
+      "question": "Which keyword is used in Python to create a loop?",
+      "options": [
+        "for",
+        "loop",
+        "while",
+        "until"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 6,
+      "question": "What is the output of the following code snippet?\n\nx = 10\ny = 5\nresult = x % y\nprint(result)",
+      "options": [
+        "2",
+        "0",
+        "1",
+        "5"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 7,
+      "question": "In Python, what does the 'import' keyword do?",
+      "options": [
+        "Imports a module or a specific function from a module",
+        "Defines a new function",
+        "Creates a new module",
+        "Initializes a variable"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 8,
+      "question": "Which data type is used to store an unordered collection of unique elements in Python?",
+      "options": [
+        "list",
+        "tuple",
+        "set",
+        "dictionary"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 9,
+      "question": "What is the correct way to open and read a file named 'data.txt' in Python?",
+      "options": [
+        "open('data.txt', 'r')",
+        "read('data.txt')",
+        "file.read('data.txt')",
+        "file.open('data.txt', 'r')"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 10,
+      "question": "What is the purpose of the 'pass' statement in Python?",
+      "options": [
+        "To pause the program execution for a specified time",
+        "To end the current loop iteration prematurely",
+        "To raise an exception",
+        "To act as a placeholder for future code"
+      ],
+      "answer": 3
+    }
+  ],
+"react":  [
+    {
+      "id": 1,
+      "question": "What is React?",
+      "options": [
+        "A server-side scripting language",
+        "A JavaScript library for building user interfaces",
+        "A database management system",
+        "A styling framework for CSS"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 2,
+      "question": "In React, what is the purpose of 'JSX'?",
+      "options": [
+        "A new file format used for importing JavaScript",
+        "A tool for transpiling React code to JavaScript",
+        "A syntax extension for writing JavaScript alongside HTML",
+        "A package manager for React applications"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 3,
+      "question": "What is the correct way to pass data from a parent component to a child component in React?",
+      "options": [
+        "Using the 'state' property",
+        "Using 'props'",
+        "Using 'setState' method",
+        "Directly modifying the child component's state"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 4,
+      "question": "What is the purpose of 'setState' in React?",
+      "options": [
+        "To update the component's state and trigger a re-render",
+        "To create a new React component",
+        "To define the initial state of a component",
+        "To add a new property to the component"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 5,
+      "question": "In React, what is the significance of 'render()'?",
+      "options": [
+        "It handles HTTP requests",
+        "It updates the state of the component",
+        "It renders the component's output to the DOM",
+        "It defines the component's constructor"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 6,
+      "question": "What is the purpose of 'keys' in React when rendering a list of elements?",
+      "options": [
+        "To specify CSS classes for each list item",
+        "To uniquely identify each element in the list",
+        "To add inline styles to the list items",
+        "To create a separate scope for each list item"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 7,
+      "question": "In React, what is the role of 'componentDidMount()'?",
+      "options": [
+        "To trigger a component update",
+        "To handle errors during rendering",
+        "To handle events in the component",
+        "To perform actions after the component is rendered to the DOM"
+      ],
+      "answer": 4
+    },
+    {
+      "id": 8,
+      "question": "What is the purpose of 'propTypes' in React?",
+      "options": [
+        "To define the type of the component's state",
+        "To specify the data types of component props",
+        "To conditionally render components",
+        "To validate the component's HTML structure"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 9,
+      "question": "What is the purpose of 'shouldComponentUpdate()' in React?",
+      "options": [
+        "To update the component's state",
+        "To render a component conditionally",
+        "To control whether the component should re-render or not",
+        "To handle asynchronous operations"
+      ],
+      "answer": 3
+    },
+    {
+      "id": 10,
+      "question": "What is the recommended way to fetch data from an API in React?",
+      "options": [
+        "Using jQuery AJAX",
+        "Using 'fetch()' API",
+        "Using 'axios' library",
+        "Using 'getJSON' method"
+      ],
+      "answer": 2
+    }
+  ]
+  
+}
