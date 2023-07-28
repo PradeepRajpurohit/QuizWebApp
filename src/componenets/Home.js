@@ -17,10 +17,6 @@ const Home = () => {
         setUser(e.target.value);
     }
 
-    // useEffect(()=>{
-    //     handleDomain();
-    // },[])
-
     const handleStart = () => {
         if (user.length <= 3) {
             setWarn('')
@@ -38,13 +34,13 @@ const Home = () => {
     return (
         <section className={' h-screen w-screen bg-cover flex md:justify-start'} style={{ backgroundImage: `url(${bg})`, backgroundRepeat: 'no-repeat' }}>
             <div className='px-8 flex flex-col justify-center md:ml-24 text-white'>
-                <h1 className='font-bold text-3xl md:text-6xl text-center'>Technical Quizes</h1>
-                <h1 className='font-semibold text-lg md:text-2xl text-center'>Test your technical skills</h1>
+                <h1 className='md:px-12 font-bold text-3xl md:text-6xl text-center'>Coding Quizes</h1>
+                <h1 className='font-semibold text-lg md:text-2xl text-center'>Test your coding skills</h1>
                 <ul className='md:my-8 my-4 list-disc text-sm text-justify'>
                     <li>There is 10 MCQ Question in quiz of your selected domain.</li>
                     <li>Each Question has 4 options with one correct option.</li>
                     <li>Each Question carry one Marks, no negetive marking is there.</li>
-                    <li>For passing the Quiz and availing the certificate you have achieved 70% mark.</li>
+                    <li>To Pass the Quiz you have to score atleast 70% marks.</li>
                     <li>You can give test several times.</li>
                 </ul>
                 <div className='space-x-2 md:text-lg text-sm'>
@@ -57,7 +53,7 @@ const Home = () => {
                         <option className='text-pink-800' value="react">React</option>
                     </select>
                 </div>
-                <input className='md:mt-8 mt-4 p-2 rounded text-black focus:outline-none' type='text' name='name' id='name' placeholder='Your Name' value={user} onChange={handleUser} required />
+                <input className='md:mt-8 mt-4 p-2 px-6 rounded text-black focus:outline-none' type='text' name='name' id='name' placeholder='Your Name' value={user} onChange={handleUser} required />
                 <div className={`text-sm text-red-600 ${warn}`}>Enter the username more then 3 letter.</div>
                 <button onClick={handleStart} type="button" className="w-full text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:bg-gradient-to-l  font-medium rounded-lg text-lg px-5 py-2 md:mt-6 mt-3 focus:outline-none ">Start</button>
             </div>

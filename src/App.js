@@ -5,11 +5,9 @@ import Quiz from './componenets/Quiz';
 import Result from './componenets/Result';
 import { Provider} from 'react-redux';
 import store from './store/store';
-// import { useState } from 'react';
+
 
 const App = () => {
-
-  // const topic = 'java';
 
   return (
     <Provider store={store}>

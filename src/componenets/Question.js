@@ -17,7 +17,6 @@ const Question=({ checked })=> {
   const question = useSelector(state => state.questions.queue[trace]);
 
   useEffect(()=>{
-    console.log(result[trace]," ",trace)
     dispatch(UpdateRes({ trace,check }))
     // eslint-disable-next-line
   },[check])
@@ -29,12 +28,12 @@ const Question=({ checked })=> {
   }
 
 
-  if(isLoading) return <h3>isLoading</h3>
+  if(isLoading) return <div className='flex justify-center'><img className='w-48' src='https://www.wpfaster.org/wp-content/uploads/2013/06/loading-gif.gif' alt=''/></div>
   if(serverError) return <h3>{serverError} || unknown error</h3>
 
   return (
     <div className='text-white md:text-2xl text-lg'>
-      <p className='font-medium mb-4'>{question?.question}</p>
+      <p className='font-medium mb-4'><span className='mr-2'>{question?.id}.</span>{question?.question}</p>
       <ul className='mx-2 space-y-1 cursor-pointer'>
         {question?.options.map((q,i) => {
 

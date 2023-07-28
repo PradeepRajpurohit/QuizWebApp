@@ -1,23 +1,34 @@
 import { useEffect, useState } from 'react'
-import Q from '../database/data.json'
 import { useDispatch } from 'react-redux'
 import * as Action from '../store/question_reducer'
 import { useParams } from 'react-router-dom'
+import { ref, child, get } from "firebase/database";
+import database from '../firebase/firebase'
 
 
 export const useFetchQuestion = () => {
 
     const { topic } = useParams();
+    const getDad = async() =>{
+    const dbRef = ref(database);
+    const snapshot = await get(child(dbRef, 'data/'))
+        if (snapshot) {
+            return (snapshot.val()[topic]);
+        } else {
+            console.log("No data available");
+        }
+    }
+
     const [getData, setGetData] = useState({ isLoading: false, quesData: [], serverError: null })
     const dispatch = useDispatch();
-    const data = Q[topic];
 
     useEffect(() => {
+        
         setGetData(prev => ({ ...prev, isLoading: true }));
         (async () => {
             try {
-                let ques = await data;
-                if (data.length > 0) {
+                let ques = await getDad();
+                if (ques.length > 0) {
                     setGetData(prev => ({ ...prev, isLoading: false }));
                     setGetData(prev => ({ ...prev, quesData: ques }));
                 }

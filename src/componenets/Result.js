@@ -22,15 +22,12 @@ const Result = () => {
 
   }
 
-
   useEffect(() => {
 
     UserAuth()
 
     let marks = 0;
     let attend = 0;
-
-    console.log(queue)
 
     for (let i = 0; i < queue.length; i++) {
       if (queue[i].answer === result[i]) {
@@ -78,12 +75,13 @@ const Result = () => {
           </div>
           <div className='flex justify-between'>
             <p>Result:</p>
-            <p>{points >= 7 ? 'Passed' : 'Failed'}</p>
+
+            {points>=7?<p className='text-green-700 font-bold'>Passed</p>:
+            <p className='text-red-700 font-bold'>Failed</p>}
           </div>
         </div>
-        <div className='flex justify-between'>
+        <div className='flex justify-center'>
           <Link to={'/'}><button onClick={handleHome} type="button" className="text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:bg-gradient-to-l  font-medium rounded-lg md:text-lg md:px-8 px-4 py-2 md:mt-6 mt-3 focus:outline-none ">Home</button></Link>
-          <Link to={'/'}><button type="button" className="text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:bg-gradient-to-l  font-medium rounded-lg md:text-lg md:px-8 px-4 py-2 md:mt-6 mt-3 focus:outline-none">Certificate</button></Link>
         </div>
       </div>
     </section>

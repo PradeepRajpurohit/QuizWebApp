@@ -14,9 +14,6 @@ const Quiz = () => {
   const navigate = useNavigate()
   const {topic} = useParams()
 
-  
-
-
   const checked = (i) => {
     setCheck(i);
   }
@@ -50,7 +47,6 @@ const Quiz = () => {
     if (result.length && result.length >= queue.length) {
       navigate('/result');
     }
-    // console.log(queue);
   })
 
   return (
